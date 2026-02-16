@@ -108,8 +108,8 @@
             bindings = <
 &kp LC(W)           &trans  &mkp MB3         &mkp MB2  &mkp MB1                             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp SQT     &kp TILDE
 &kp LA(F4)          &trans  &kp PRINTSCREEN  &mkp MB5  &mkp MB4            &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH       &kp DOLLAR  &kp NON_US_BACKSLASH
-&trans              &trans  &trans           &trans    &trans    &trans    &kp QUESTION     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PERCENT    &kp LCTRL   &kp AMPERSAND
-&kp LG(DOWN_ARROW)  &trans  &trans           &trans    &trans    &trans    &kp COLON        &trans                                                                  &trans
+&trans              &trans  &trans           &trans    &trans    &trans    &kp QUESTION     &kp LESS_THAN         &kp GREATER_THAN       &kp PERCENT    &kp LCTRL   &kp AMPERSAND
+&kp LG(DOWN_ARROW)  &trans  &trans           &trans    &trans    &trans    &kp COLON        &kp INT_YEN                                                             &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -117,10 +117,10 @@
 
         layer_2 {
             bindings = <
-&kp KP_NUMLOCK  &kp CAPSLOCK    &kp UP_ARROW    &kp PAGE_UP      &kp HOME                            &kp N7        &kp N8        &kp N9        &kp NUMBER_0  &kp PLUS
-&trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &kp ASTRK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans        &kp MINUS
-&trans          &trans          &trans          &kp PAGE_DOWN    &kp INSERT  &trans       &kp ASTRK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &kp ASTRK
-&trans          &trans          &trans          &trans           &trans      &kp LG(V)    &trans     &trans                                                  &kp SLASH
+&kp KP_NUMLOCK  &kp CAPSLOCK    &kp UP_ARROW    &kp PAGE_UP      &kp HOME                         &kp N7        &kp N8        &kp N9        &kp NUMBER_0  &kp PLUS
+&trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans        &kp MINUS
+&trans          &trans          &trans          &kp PAGE_DOWN    &kp INSERT  &trans       &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &kp ASTRK
+&trans          &trans          &trans          &trans           &trans      &kp LG(V)    &trans  &trans                                                  &kp SLASH
             >;
 
             sensor-bindings = <&scroll_up_down>;
