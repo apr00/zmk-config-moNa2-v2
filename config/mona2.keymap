@@ -26,12 +26,12 @@
 
         Henkan {
             bindings = <&kp LS(SPACE)>;
-            key-positions = <37 38>;
+            key-positions = <38 21>;
         };
 
         SSS {
             bindings = <&kp LEFT_SHIFT>;
-            key-positions = <39 40>;
+            key-positions = <38 37>;
         };
     };
 
@@ -106,10 +106,10 @@
 
         layer_1 {
             bindings = <
-&kp LC(W)           &trans  &mkp MB3         &mkp MB2            &mkp MB1                                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp SQT     &kp TILDE
-&kp LA(F4)          &trans  &kp PRINTSCREEN  &mkp MB5            &mkp MB4                 &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH       &kp DOLLAR  &kp NON_US_BACKSLASH
-&kp LG(UP_ARROW)    &trans  &trans           &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &trans    &kp QUESTION     &kp LESS_THAN         &kp GREATER_THAN       &kp PERCENT    &kp LCTRL   &kp AMPERSAND
-&kp LG(DOWN_ARROW)  &trans  &trans           &trans              &trans         &trans    &kp COLON        &kp INT_YEN                                                             &trans
+&kp LC(W)           &kp LG(TAB)  &mkp MB3         &mkp MB2            &mkp MB1                                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp SQT     &kp TILDE
+&kp LA(F4)          &trans       &kp PRINTSCREEN  &mkp MB5            &mkp MB4                 &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH       &kp DOLLAR  &kp NON_US_BACKSLASH
+&kp LG(UP_ARROW)    &trans       &trans           &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &trans    &kp QUESTION     &kp LESS_THAN         &kp GREATER_THAN       &kp PERCENT    &kp LCTRL   &kp AMPERSAND
+&kp LG(DOWN_ARROW)  &trans       &trans           &trans              &trans         &trans    &kp COLON        &kp INT_YEN                                                             &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
