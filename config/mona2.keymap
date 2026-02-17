@@ -26,12 +26,12 @@
 
         Henkan {
             bindings = <&kp LS(SPACE)>;
-            key-positions = <38 21>;
+            key-positions = <38 37>;
         };
 
-        SSS {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <38 37>;
+        A_alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <37 36>;
         };
     };
 
@@ -106,10 +106,10 @@
 
         layer_1 {
             bindings = <
-&kp LC(W)           &kp LG(TAB)  &mkp MB3         &mkp MB2            &mkp MB1                                  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp SQT     &kp TILDE
-&kp LA(F4)          &trans       &kp PRINTSCREEN  &mkp MB5            &mkp MB4                 &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH       &kp DOLLAR  &kp NON_US_BACKSLASH
-&kp LG(UP_ARROW)    &trans       &trans           &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &trans    &kp QUESTION     &kp LESS_THAN         &kp GREATER_THAN       &kp PERCENT    &kp LCTRL   &kp AMPERSAND
-&kp LG(DOWN_ARROW)  &trans       &trans           &trans              &trans         &trans    &kp COLON        &kp INT_YEN                                                             &trans
+&trans  &kp LG(TAB)   &kp LG(UP_ARROW)  &mkp MB2       &mkp MB1                               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp SQT     &kp TILDE
+&trans  &kp LG(LEFT)  &kp LG(DOWN)      &kp LG(RIGHT)  &mkp MB3              &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH       &kp DOLLAR  &kp NON_US_BACKSLASH
+&trans  &trans        &kp PRINTSCREEN   &mkp MB5       &mkp MB4    &trans    &kp QUESTION     &kp LESS_THAN         &kp GREATER_THAN       &kp PERCENT    &kp LCTRL   &kp AMPERSAND
+&trans  &trans        &trans            &kp LC(W)      &kp LA(F4)  &trans    &kp COLON        &kp INT_YEN                                                             &trans
             >;
 
             sensor-bindings = <&scroll_right_left>;
@@ -119,7 +119,7 @@
             bindings = <
 &kp KP_NUMLOCK  &kp CAPSLOCK    &kp UP_ARROW    &kp PAGE_UP      &kp HOME                         &kp N7        &kp N8        &kp N9        &kp NUMBER_0  &kp PLUS
 &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans        &kp MINUS
-&trans          &trans          &trans          &kp PAGE_DOWN    &kp INSERT  &trans       &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &kp ASTRK
+&trans          &trans          &trans          &kp PAGE_DOWN    &kp INSERT  &kp LG(V)    &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &kp ASTRK
 &trans          &trans          &trans          &trans           &trans      &kp LG(V)    &trans  &trans                                                  &kp SLASH
             >;
 
