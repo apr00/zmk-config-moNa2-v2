@@ -96,8 +96,8 @@
         default_layer {
             bindings = <
 &lt 4 Q         &kp W         &kp E         &kp R      &kp T                                    &kp Y    &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D         &kp F      &kp G                         &kp MINUS  &kp H    &kp J  &kp K      &kp L    &kp BACKSPACE
-&kp Z           &kp X         &kp C         &kp V      &kp B          &kp F2         &kp ASTRK  &kp N    &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
+&lt 4 A         &kp S         &kp D         &kp F      &kp G                         &kp MINUS  &kp H    &kp J  &kp K      &kp L    &kp BACKSPACE
+&lt 4 Z         &kp X         &kp C         &kp V      &kp B          &kp F2         &kp ASTRK  &kp N    &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 TAB  &lt 2 AT_SIGN  &lt 1 SPACE    &kp ENTER  &kp DEL                             &kp LCTRL
             >;
 
@@ -106,21 +106,21 @@
 
         layer_1 {
             bindings = <
-&trans  &kp LG(TAB)   &kp LG(UP_ARROW)  &mkp MB2       &mkp MB1                               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp SQT     &kp TILDE
-&trans  &kp LG(LEFT)  &kp LG(DOWN)      &kp LG(RIGHT)  &mkp MB3              &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH       &kp DOLLAR  &kp NON_US_BACKSLASH
-&trans  &trans        &kp PRINTSCREEN   &mkp MB5       &mkp MB4    &trans    &kp QUESTION     &kp LESS_THAN         &kp GREATER_THAN       &kp PERCENT    &kp LCTRL   &kp AMPERSAND
-&trans  &trans        &trans            &kp LC(W)      &kp LA(F4)  &trans    &kp COLON        &kp INT_YEN                                                             &trans
+&kp LC(W)   &kp LG(TAB)   &kp LG(UP_ARROW)  &mkp MB2       &mkp MB1                             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp SQT     &kp TILDE
+&kp LA(F4)  &kp LG(LEFT)  &kp LG(DOWN)      &kp LG(RIGHT)  &mkp MB3            &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp HASH       &kp DOLLAR  &kp NON_US_BACKSLASH
+&kp LC(W)   &trans        &kp PRINTSCREEN   &mkp MB5       &mkp MB4  &trans    &kp QUESTION     &kp LESS_THAN         &kp GREATER_THAN       &kp PERCENT    &kp LCTRL   &kp AMPERSAND
+&trans      &trans        &trans            &trans         &trans    &trans    &kp COLON        &kp SEMICOLON                                                           &trans
             >;
 
-            sensor-bindings = <&scroll_right_left>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         layer_2 {
             bindings = <
 &kp KP_NUMLOCK  &kp CAPSLOCK    &kp UP_ARROW    &kp PAGE_UP      &kp HOME                            &kp N7        &kp N8        &kp N9        &kp NUMBER_0  &kp PLUS
-&trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &trans     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans        &kp MINUS
-&trans          &trans          &trans          &kp PAGE_DOWN    &kp INSERT  &kp LG(V)    &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &kp ASTRK
-&trans          &trans          &trans          &trans           &trans      &kp LG(V)    &kp EQUAL  &kp EQUAL                                               &kp SLASH
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &trans     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans        &kp MINUS
+&kp LEFT_SHIFT  &trans          &trans          &kp PAGE_DOWN    &kp INSERT  &kp LG(V)    &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans        &kp ASTRK
+&kp LEFT_SHIFT  &trans          &trans          &trans           &trans      &kp LG(V)    &kp EQUAL  &kp EQUAL                                               &kp SLASH
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -139,10 +139,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &kp LC(A)  &kp LC(X)                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &kp LC(Z)  &kp LC(C)            &bootloader  &bt BT_NXT    &bt BT_PRV    &trans        &trans        &trans
-&trans  &trans  &trans  &kp LC(Y)  &kp LC(V)  &trans    &trans       &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &trans     &trans     &trans    &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &trans  &trans  &kp LC(A)  &kp LC(X)                                &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &kp LC(Z)  &kp LC(C)                   &bootloader  &bt BT_NXT    &bt BT_PRV    &trans        &trans        &trans
+&trans  &trans  &trans  &kp LC(Y)  &kp LC(V)  &trans           &trans       &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans     &trans     &kp LS(SPACE)    &trans       &trans                                                  &bt BT_CLR_ALL
             >;
 
             sensor-bindings = <&scroll_up_down>;
